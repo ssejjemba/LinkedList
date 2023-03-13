@@ -23,6 +23,8 @@ export class SinglyLinkedList {
     this.length = 0;
   }
 
+  // push(val): This method adds a new node to the end of the linked list. The time complexity of this operation is O(1), since we simply update the next property of the last node in the list to point to the new node. The space complexity is also O(1), as we only create a new node with the given value and update the next property of the last node in the list.
+
   push(val) {
     const newNode = new Node(val);
     if (!this.head) {
@@ -35,6 +37,8 @@ export class SinglyLinkedList {
     this.length++;
     return this;
   }
+
+  // pop(): This method removes the last node from the end of the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list to find the second to last node. The space complexity is O(1), as we only need to update the next property of the second to last node and return the removed node.
 
   pop() {
     if (!this.head) return undefined;
@@ -54,6 +58,8 @@ export class SinglyLinkedList {
     return current;
   }
 
+  // shift(): This method removes the first node from the beginning of the linked list. The time complexity of this operation is O(1), as we only need to update the head property of the list to point to the second node. The space complexity is O(1), as we only need to return the removed node.
+
   shift() {
     if (!this.head) return undefined;
     const currentHead = this.head;
@@ -64,6 +70,8 @@ export class SinglyLinkedList {
     }
     return currentHead;
   }
+
+  // unshift(val): This method adds a new node to the beginning of the linked list. The time complexity of this operation is O(1), as we only need to create a new node and update the next property to point to the old head node. The space complexity is also O(1), as we only create a new node with the given value.
 
   unshift(val) {
     const newNode = new Node(val);
@@ -78,6 +86,8 @@ export class SinglyLinkedList {
     return this;
   }
 
+  // get(index): This method retrieves the node at the given index in the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list to find the node at the given index. The space complexity is O(1), as we only need to return the found node.
+
   get(index) {
     if (index < 0 || index >= this.length) return null;
     let counter = 0;
@@ -89,6 +99,7 @@ export class SinglyLinkedList {
     return current;
   }
 
+  // set(index, val): This method updates the value of the node at the given index in the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list to find the node at the given index. The space complexity is O(1), as we only update the value of the found node.
   set(index, val) {
     const foundNode = this.get(index);
     if (foundNode) {
@@ -97,6 +108,8 @@ export class SinglyLinkedList {
     }
     return false;
   }
+
+  // insert(index, val): This method adds a new node with the given value at the given index in the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list to find the node before the given index. The space complexity is O(1), as we only create a new node with the given value and update the next property of the previous node.
 
   insert(index, val) {
     if (index < 0 || index > this.length) return false;
@@ -115,6 +128,8 @@ export class SinglyLinkedList {
     return true;
   }
 
+  // remove(index): This method removes the node at the given index in the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list to find the node before the given index. The space complexity is O(1), as we only update the next property of the previous node and return the removed node.
+
   remove(index) {
     if (index < 0 || index >= this.length) return undefined;
     if (index === 0) return this.shift();
@@ -125,6 +140,8 @@ export class SinglyLinkedList {
     this.length--;
     return removedNode;
   }
+
+  // reverse(): This method reverses the order of the nodes in the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list once to update the next property of each node. The space complexity is O(1), as we only need to create a few temporary variables to update the next properties of
 
   reverse() {
     let node = this.head;
