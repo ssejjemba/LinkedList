@@ -26,4 +26,4 @@ The repository also covers advanced topics, such as the Great Tree-List Recursio
 
 ## How to use this repository
 
-This repository is organized by types of linked lists and standard problems. You can navigate through the questions and their respective answers by checking the . The repository is designed to provide practical examples and explanations that are easy to follow, making it suitable for both beginners and experienced developers 🎓.
+This repository is organized by types of linked lists and standard problems. You can navigate through the questions and their respective answers by checking the `src` folder for the different topics. The repository is designed to provide practical examples and explanations that are easy to follow, making it suitable for both beginners and experienced developers 🎓.
