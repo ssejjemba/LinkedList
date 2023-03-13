@@ -141,7 +141,7 @@ export class SinglyLinkedList {
     return removedNode;
   }
 
-  // reverse(): This method reverses the order of the nodes in the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list once to update the next property of each node. The space complexity is O(1), as we only need to create a few temporary variables to update the next properties of
+  // reverse(): This method reverses the order of the nodes in the linked list. The time complexity of this operation is O(n), where n is the length of the linked list, as we need to traverse the list once to update the next property of each node. The space complexity is O(1), as we only need to create a few temporary variables to update the next properties of the nodes in place.
 
   reverse() {
     let node = this.head;
