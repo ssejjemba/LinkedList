@@ -10,7 +10,7 @@ class DoublyLinkedListNode {
   }
 }
 
-export class DoublyLinkedList {
+class DoublyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -166,3 +166,5 @@ export class DoublyLinkedList {
     return this;
   }
 }
+
+module.exports = DoublyLinkedList;

@@ -16,7 +16,7 @@ class Node {
   }
 }
 
-export class SinglyLinkedList {
+class SinglyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -158,3 +158,5 @@ export class SinglyLinkedList {
     return this;
   }
 }
+
+module.exports = SinglyLinkedList;

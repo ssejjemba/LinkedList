@@ -9,7 +9,7 @@ class CircularLinkedListNode {
   }
 }
 
-export class CircularLinkedList {
+class CircularLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -134,3 +134,5 @@ export class CircularLinkedList {
     return removedNode;
   }
 }
+
+module.exports = CircularLinkedList;

@@ -153,3 +153,5 @@ class CircularDoublyLinkedList {
     return removedNode;
   }
 }
+
+module.exports = CircularDoublyLinkedList;
