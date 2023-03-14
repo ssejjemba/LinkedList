@@ -24,4 +24,4 @@ newList.push(2);
 newList.push("Third");
 newList.push([1, 2, 3, 4]);
 
-console.log(getLinkedListLength(newList.head));
+console.log(getLinkedListLength(newList.head)); // 4

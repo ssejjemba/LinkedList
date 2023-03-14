@@ -23,3 +23,7 @@ newList.push("Third");
 newList.push([1, 2, 3, 4]);
 
 printLinkedList(newList.head);
+// First
+// 2
+// Third
+// [ 1, 2, 3, 4 ]
