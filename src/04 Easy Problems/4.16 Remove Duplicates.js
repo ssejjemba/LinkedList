@@ -26,3 +26,7 @@ function removeDuplicates(head) {
 
   return head;
 }
+
+// The removeDuplicates() function takes the head of the linked list as input and returns a pointer to a linked list with no duplicate elements. It initializes a Set values to store unique values in the linked list. It iterates through the list, checking if the value of the next node is already in the Set. If it is, the duplicate node is removed; otherwise, the value is added to the Set, and the iteration continues.
+
+// The time complexity of this algorithm is O(N), where N is the number of nodes in the linked list, as it iterates through the list once. The space complexity is O(N) because it uses the Set to store unique values from the linked list.
